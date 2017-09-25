@@ -1,0 +1,816 @@
+/*source: https://developer.mozilla.org/en/docs/Web/CSS/@font-face*/
+/*source: https://stackoverflow.com/questions/28279989/multiple-font-weights-one-font-face-query*/
+@font-face {
+  font-family: "ProximaNova";
+  src: url(font/ProximaNova-Regular.otf) format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(font/ProximaNova-Light.otf) format("opentype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(font/ProximaNova-Semibold.otf) format("opentype");
+  font-weight: bold;
+}
+/*Styleguide.html*/
+.styleguide-body {
+	margin: 2em 20%;
+}
+
+.styleguide-body h3 {
+	margin-top: 1.5em;
+}
+
+#styleguide-title {
+	text-align: center;
+}
+
+.styleguide-heading2 {
+	margin: 1.5em 0 1em;
+	font-size: 2.35em;
+}
+
+#styleguide-home-project-title {
+    font-size: 8vh;
+    letter-spacing: 2vw;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+#styleguide-home-project-subtitle {
+	text-align: center;
+	width: 100%;
+	bottom: 1.5vh;
+	font-weight: normal;
+}
+
+#nav-button-styleguide {
+	letter-spacing: 1.2em;
+	/*https://developer.mozilla.org/en/docs/Web/CSS/text-orientation*/
+	margin: auto;
+	text-align: center;
+	z-index: 0;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 2.2vh !important;
+
+	transition: all 0.5s ease-in-out;
+}
+
+#nav-button-styleguide:hover {
+	letter-spacing: 3em;
+}
+
+#primary-colour {
+	background-color: #5A0377;
+	height: 10em;
+	width: 10em;
+}
+
+#darkGrey-colour {
+	background-color: #333333;
+	height: 10em;
+	width: 10em;
+}
+
+#mediumGrey-colour {
+	background-color: #A3A2A2;
+	height: 10em;
+	width: 10em;
+}
+
+#lightGrey-colour {
+	background-color: #e8e8e8;
+	height: 10em;
+	width: 10em;
+}
+
+.g-item {
+    padding: 1em;
+    margin: 0.5rem 0.5rem;
+    background-color: #d4d9df;
+    color: #596068;
+}
+
+/*end of styleguide.html*/
+
+
+
+body {
+	font-family: "ProximaNova", sans-serif;
+	font-weight: normal;
+	color: #333333;
+	margin: 0;
+	padding:0;
+
+	animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+h1 {
+	font-weight: lighter;
+	font-size: 3.5vh;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 3em;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 1.6em;
+}
+
+p {
+	font-weight: normal;
+}
+
+nav {
+	/*position: relative;*/
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+	color: #5A0377;
+}
+
+footer {
+	text-align: center;
+}
+
+.webTitle {
+	text-align: center;
+	letter-spacing: 2.8vw;
+	line-height: 1.3em;
+	padding-left: 0.2em;
+    
+	width: 100vw;
+	z-index: 5;
+}
+
+.nav-button {
+	letter-spacing: 1.2em;
+	/*https://developer.mozilla.org/en/docs/Web/CSS/text-orientation*/
+	writing-mode: vertical-lr;
+	text-orientation: sideways;
+	margin: auto;
+	top: 0;
+    bottom: 0;
+    height: 100vh;
+	text-align: center;
+	z-index: 0;
+	position: absolute;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 2.2vh !important;
+
+	transition: all 0.5s ease-in-out;
+}
+
+.nav-button:hover {
+	letter-spacing: 1.5em;
+}
+
+.nav-selected {
+	color: #5A0377;
+	z-index: 24;
+}
+
+#nav-left {
+	left: 0.5em;
+}
+
+#nav-right {
+	/*https://developer.mozilla.org/en/docs/Web/CSS/transform*/
+	right: 0.6em;
+    transform: rotate(180deg);
+}
+
+.bottom-nav {
+	letter-spacing: 1.2em;
+	text-align: center;
+	bottom: 2em;
+    left: 1.2em;
+    right: 0;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 2.2vh !important;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.bottom-nav:hover {
+	letter-spacing: 1.5em;
+}
+
+.down-arrow {
+	width: 2.5em;
+	height: 2em;
+	position: absolute;
+	bottom: 0.8em;
+	margin: auto;
+	left: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.arrow-button:hover .down-Chevron {
+	fill: #5A0377;
+}
+
+
+/*end of navigation*/
+
+
+/*Homepage*/
+.home-content {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: -3;
+}
+
+.home-content img {
+	min-width: 25%;
+	/*width: 60%;*/
+	padding-left: 20em;
+/*	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;*/
+	margin: auto;
+	display: block;
+}
+
+.home-content h2 {
+	position: relative;
+/*	width: 100%;*/
+	margin:0 1em;
+	z-index: 5;
+	line-height: 1.1em;
+}
+
+.home {
+	height: 100vh;
+}
+
+/*home - tts*/
+.project-section-nav {
+	z-index: 5;
+	position: fixed;
+	background-color: rgba(255,255,255,0.5);
+	height: 4.2em;
+	width: 100%;
+	/*height: 3em;*/
+	transition: all 0.5s ease-in-out;
+	top: 0;
+	opacity: 0;
+}
+
+#up-arrow {
+	z-index: 10;
+	position: fixed;
+	bottom: 1em;
+	height: 2.2em;
+	fill: #5A0377;
+	margin-left:auto;
+	right: 1%;
+}
+
+#up-arrow:hover {
+	cursor: pointer;
+}
+
+.projects {
+	width: 100%; 
+	height: 50vh;
+	/*margin: 10% 0;*/
+	padding: 4em 10%;
+	top: 20vh;
+	/*background-color: grey;*/
+}
+
+.project-container {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	margin: 0 2em;
+		/*background-color: #5A0377;*/
+}
+
+.project-thumbnail{
+	/*width: 100%;*/
+	height: 100%;
+    margin: auto;
+    /*border: solid 0.001em #5A0377;*/
+    /* opacity: 0.8; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /*bottom: 13vh;*/
+}
+
+.purpleThumbnail-opacity {
+	opacity: 1;
+    transition: all 0.3s ease-in-out ;
+}
+
+.purpleThumbnail-opacity:hover {
+	opacity: 0;
+}
+
+.project-container a {
+	color: white; 
+}
+
+.project-container:hover a {
+	/*color: black; */
+}
+
+.home-project-title {
+	position: absolute;
+     font-size: 4.8vh; 
+    letter-spacing: 1vw;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    /*height: 41%;*/
+    line-height: 2em;
+    padding-left: 0.3em;
+    /* bottom: 50%; */
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.project-single-title {
+	height: 10.5% !important;
+}
+
+.project-two-title {
+	height: 27% !important;
+}
+
+
+.project-container a:hover .purpleThumbnail-opacity{
+	opacity: 0;
+}
+
+.home-project-subtitle {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 0;
+	bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+	font-weight: normal;
+}
+
+.main-anchor {
+	position: relative !important;
+}
+
+.sub-anchor {
+	position: absolute !important;
+}
+
+#home-project1 {
+	/*background-color: grey;*/
+}
+
+/*PROJECt- page*/
+.project-nav {
+	z-index: 5;
+	position: fixed;
+	background-color: rgba(255,255,255,0.85);
+	height: 4.2em;
+	width: 100%;
+	color: #5A0377;
+	transition: all 0.5s ease-in-out;
+}
+
+.p-project-nav {
+	position: fixed;
+	padding: 1.5em 0;
+	left: 2em;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+}
+
+.hide-text-previous {
+	font-size: 1em;
+    position: absolute;
+    bottom: 1.75em;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.p-project-nav:hover .hide-text-previous {
+	opacity: 1;
+	left: 1.1em;
+}
+
+.p-project-nav:hover .side-chevron {
+	fill: #5A0377;
+}
+
+.n-project-nav {
+	position: fixed;
+	padding: 1.5em 0;
+	right: 2em;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+}
+
+.hide-text-next {
+	font-size: 1em;
+    position: absolute;
+    bottom: 1.8em;
+    right: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.n-project-nav:hover .side-chevron {
+	fill: #5A0377;
+}
+
+.n-project-nav:hover .hide-text-next {
+	opacity: 1;
+	right: 1.1em;
+}
+
+
+.project-nav-logo {
+	position: fixed;
+	top: 1em;
+	margin: 0 auto;
+    left: 0;
+    right: 0;
+	height: 2.2em;
+}
+
+.project-cover-container {
+	/*source: https://css-tricks.com/perfect-full-page-background-image/*/
+	background: url(img/global-thumbnail-full.jpg);
+	background-size: cover;
+	background-position: center center;
+	/*background: rgba(51, 51, 51, 0.2);*/
+
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	height: 72vh;
+		/*background-color: #5A0377;*/
+}
+
+.project-cover-content {
+	position: absolute;
+	margin: auto;
+	/*height: 10%;*/
+
+	/*bottom: 50%;*/
+	top:30%;
+	bottom:50%;
+	/*align-items: center;*/
+	left: 0;
+	right: 0;
+}
+
+#home-project1 {
+	position: relative;
+}
+
+/*.project-cover {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+*/
+
+#norco-image-cover {
+	background: url(img/norco-thumbnail-full.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.project-title {
+	font-size: 5vh;
+	letter-spacing: 4vh;
+	margin-left: 1em;
+	line-height: 7vh;
+	color: white;
+	font-weight: bold;
+}
+
+.project-tagline {
+	font-size: 2.7vh;
+	/*letter-spacing: 5vh;*/
+	line-height: 3vh;
+	color: white;
+	font-weight: normal;
+}
+
+.project-intro {
+	padding: 3em 20%;
+}
+
+.project-paragraph {
+	/*width: 50%;*/
+	margin: auto;
+	
+	line-height: 1.5em;
+	font-size: 1.5em;
+}
+
+.video-container {
+	position: relative;
+	width: 100%;
+	height: 0px;
+	margin-top: 9%;
+	padding-bottom: 56%;
+}
+
+.video-container iframe{
+	position: absolute; 
+	left: 0px; 
+	top: 0px; 
+	width: 100%; 
+	height: 100%
+}
+
+.text-highlight {
+	background-color: #5A0377;
+	color: white;
+}
+
+.basic-info {
+	padding: 1em 0;
+	display: flex;
+  	align-items: flex-start;
+}
+
+.basic-info-col1 {
+	flex: 1 1 0%;
+}
+
+.basic-info-col2 {
+	flex: 2 1 0%;
+	margin-left: 10%;
+}
+
+.project-heading3 {
+	margin-top: 2em;
+}
+
+.basic-info ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.basic-info li, p {
+	line-height: 1.5em;
+	font-size: 1.2em;
+}
+
+/*Project - process project*/
+.project-main-content {
+	padding: 1em 20%;
+}
+
+.project-sectionTitle {
+	margin: 0.5em 0;
+}
+
+.project-content-image {
+	margin: 4.5% 0 2%;
+}
+
+figcaption {
+	/*line-height: 1.9em;*/
+	font-size: 1em;
+}
+
+.project-content-image img{
+	margin-top: 2%;
+	width: 100%;
+}
+
+/*.project-content-image-v2 {
+	margin: 4.5% 20% 2%;
+}
+
+.project-content-image-v2 img{
+	width: 100%;
+	height: 100%;
+}*/
+
+.image-border {
+	border: 0.3px solid #e8e8e8;
+}
+
+
+/*About*/
+#about-section {
+	background-color: rgba(255,255,255, 0.95);
+	z-index: 20;
+}
+
+.about-content {
+	width: 50%;
+	margin-left: 5%;
+}
+
+#myImage{ 
+	/*margin-left: auto;*/
+	width: 100%;
+}
+
+.social-icons {
+	margin: 1em 1.3em 1em 0em;
+	width: 2.2em;
+}
+
+.socialIcons-style {
+	fill: #333333;
+	transition: all ease-in-out 0.2s; 
+}
+
+.social-icons:hover .socialIcons-style {
+	fill: #5A0377;
+}
+
+.x-button {
+	position: absolute;
+	top: 4vh;
+	right: 9%;
+	z-index: 15;
+	cursor: pointer;
+}
+
+.x-button:hover {
+	opacity: 0.5;
+}
+
+
+/*------------MEDIA QUERIES----------*/
+@media (max-width: 65em){
+
+.bottom-nav { 
+	bottom: 3em;
+}
+
+.down-arrow {
+	bottom: 0.4em;
+}
+
+.project-nav-logo {
+
+}
+.home-content img {
+	padding: 3em 2.5em 0;
+    width: 100%;
+    /* margin: auto; */
+    position: absolute;
+    top: 9vh;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+
+}
+
+.home-content h2 {
+	position: absolute;
+	margin-top: 0;
+	width: 75%;
+	margin-bottom: 1em;
+	/* padding: 0 0em; */
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: 12vh;
+	text-align: center;
+	line-height: 1.1em;
+	font-size: 1.9em;
+    /* color: white; */
+}
+
+.home-project-subtitle {
+	bottom: 0.7em;
+}
+/*About.html*/
+#myImage{
+	height: auto;
+	width: 100%;
+	/*margin-top: 17%;*/
+	padding: 1% 14%;
+}
+
+.about-content {
+    width: 100%;
+   	padding: 0 14% 0;
+   	margin: auto;
+   	font-size: 1em;
+}
+
+/*Projects*/
+
+.project-thumbnail{
+	/*width: 100%;*/
+	height: 90%;
+}
+
+.project-container {
+	margin: 0 1em;
+	height: 45%;
+}
+
+.project-intro {
+	padding: 1em 8%;
+}
+
+.project-main-content {
+	padding: 1em 7%;
+}
+
+.project-cover-container {
+	/*height: 0vh;*/
+}
+
+.project-container h2 {
+	/*bottom: -15vh;*/
+}
+
+.project-cover-content { 
+	bottom: 20vh;
+}
+
+.project-paragraph {
+	font-size: 1em !important;
+}
+
+.basic-info {
+	flex-wrap: wrap;
+}
+
+.basic-info li, p {
+	line-height: 1.5em;
+	font-size: 1em !important;
+}
+
+.basic-info-col1 {
+	flex: 1 1 100%;
+}
+
+.basic-info-col2 {
+	flex: 1 1 100%;
+	margin-left: 0;
+}
+
+
+/*end of media query*/
+} 
+
+.reference-content li {
+	padding: 0.5em 0;
+}

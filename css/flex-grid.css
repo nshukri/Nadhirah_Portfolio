@@ -1,0 +1,32 @@
+/*
+  GRID STRUCTURE
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  flex: 1 1 0%;
+}
+
+
+@media (max-width: 65em){
+  .grid-item {
+   flex: 0 1 100%;
+  }
+
+  .grid {
+    flex-wrap: wrap;
+  }
+  
+
+} 
+/*end of media query*/

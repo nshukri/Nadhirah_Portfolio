@@ -8,6 +8,7 @@
 
 	<link href="css/flex-grid.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/lightbox.min.css" rel="stylesheet">
 	<link rel="shortcut icon" href="favicon.ico" />
 </head>
 <body>
@@ -21,14 +22,14 @@
 	    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 	        <polygon class="side-chevron" fill="#333333" points="0 10.5 10.5 0 12.5 2 4 10.5 12.5 19 10.5 21"></polygon>
 	    </g></svg>
-		<span class="hide-text-previous">Previous</span></a>
+		<span class="hide-text-previous">Adapt</span></a>
 
 	<!-- Logo Home -->
 	<a href="index.html"><img class="project-nav-logo" src="img/logo-02.svg" alt="navigation logo"></a>
 
 	<!-- Next Project -->
 	<a class="n-project-nav" href="norco.html">
-		<span class="hide-text-next">Next</span>
+		<span class="hide-text-next">Norco</span>
 		<svg width="13px" height="21px" viewBox="0 0 13 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
 	    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -59,9 +60,14 @@
 	</div>
 
 	<!-- image -->
-	<figure class="grid project-content-image">
+	<!-- <figure class="grid project-content-image">
 		<img class="grid-item image-border" src="img/p1-landing-right.jpg" alt="wireframe image">
+	</figure> -->
+	<!-- image -->
+	<figure class="grid project-content-image">
+		<img class="grid-item" src="img/p1-final.jpg" alt="final image">
 	</figure>
+	<figcaption class="project-paragraph">View of the interface when goal 14 is selected.</figcaption>
 
 	<!-- team/info/tools -->
 	<div class="basic-info">
@@ -100,7 +106,7 @@
 
 	<!-- image -->
 	<figure class="grid project-content-image">
-		<img class="grid-item" src="img/p1-stickynotes-2.jpg" alt="sticky notes image">
+		<a href="img/p1-stickynotes-2.jpg" data-lightbox="sap-3" data-title="Adapt visual styleguide"><img class="grid-item" src="img/p1-stickynotes-2.jpg" alt="sticky notes image"></a>
 	</figure>
 </section>
 
@@ -114,13 +120,13 @@
 	<figure class="grid project-content-image">
 		<img class="grid-item image-border" src="img/p1-wireframe.jpg" alt="wireframe image">
 	</figure>
-		<figcaption class="project-paragraph"><em>Wireframe of the navigation screen on the left monitor</em></figcaption>
+		<figcaption class="project-paragraph">Wireframe of the navigation screen on the left monitor.</figcaption>
 
 	<!-- image -->
 	<figure class="grid project-content-image">
 		<img class="grid-item image-border" src="img/p1-wireframe-center.jpg" alt="wireframe image">
 	</figure>
-		<figcaption class="project-paragraph"><em>Wireframe of the landing screen for center monitor</em></figcaption>
+		<figcaption class="project-paragraph">Wireframe of the landing screen for center monitor.</figcaption>
 </section>
 
 
@@ -132,25 +138,23 @@
 	<!-- image -->
 	<figure class="grid project-content-image">
 		<div class="grid-item">
-			<img class="image-border" src="img/p1-final-navigation.png" alt="wireframe image">
+			<a href="img/p1-final-navigation.png" data-lightbox="sap-4" data-title="Left monitor landing screen"><img class="image-border" src="img/p1-final-navigation.png" alt="wireframe image"></a>
 		</div>
 		<div class="grid-item">
-			<img class="image-border" src="img/p1-landing-center.png" alt="wireframe image">
+			<a href="img/p1-landing-center.png" data-lightbox="sap-4" data-title="Center monitor landing screen"><img class="image-border" src="img/p1-landing-center.png" alt="wireframe image"></a>
 		</div>
 		<div class="grid-item">
-			<img class="image-border" src="img/p1-landing-right.jpg" alt="wireframe image">
+			<a href="img/p1-landing-right.jpg" data-lightbox="sap-4" data-title="Right monitor landing screen"><img class="image-border" src="img/p1-landing-right.jpg" alt="wireframe image"></a>
 		</div>
 	</figure>
-	<figcaption class="project-paragraph"><em>Interface of the initial landing screens</em></figcaption>
+	<figcaption class="project-paragraph">Interface of the initial landing screens.</figcaption>
 
-	<!-- image -->
-	<figure class="grid project-content-image">
-		<img class="grid-item" src="img/p1-final.jpg" alt="final image">
-	</figure>
-	<figcaption class="project-paragraph"><em>View of the interface when goal 14 is selected</em></figcaption>
+	
 </section>
 
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/lightbox.js"></script>
 
 </body>
 </html>

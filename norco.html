@@ -8,6 +8,7 @@
 
 	<link href="css/flex-grid.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/lightbox.min.css" rel="stylesheet">
 	<link rel="shortcut icon" href="favicon.ico" />
 </head>
 <body>
@@ -21,14 +22,14 @@
 	    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 	        <polygon class="side-chevron" fill="#333333" points="0 10.5 10.5 0 12.5 2 4 10.5 12.5 19 10.5 21"></polygon>
 	    </g></svg>
-		<span class="hide-text-previous">Previous</span></a>
+		<span class="hide-text-previous">The Global Goals</span></a>
 
 	<!-- Logo Home -->
 	<a href="index.html"><img class="project-nav-logo" src="img/logo-02.svg" alt="navigation logo"></a>
 
 	<!-- Next Project -->
 	<a class="n-project-nav" href="adapt.html">
-		<span class="hide-text-next">Next</span>
+		<span class="hide-text-next">Adapt</span>
 		<svg width="13px" height="21px" viewBox="0 0 13 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
 	    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -127,7 +128,7 @@
 
 	<!-- image -->
 	<figure class="grid project-content-image">
-		<img class="grid-item" src="img/norco-customer-journey.jpg" alt="sticky notes image">
+		<a href="img/norco-customer-journey.jpg" data-lightbox="Norco-customer" data-title="Norco customer journey"><img class="grid-item" src="img/norco-customer-journey.jpg" alt="Norco customer journey"></a>
 	</figure>
 </section>
 
@@ -152,13 +153,13 @@
 	<h3>Wireframe: Early iterations</h3>
 	<!-- image -->
 	<figure class="grid project-content-image">
-		<img class="grid-item" src="img/norco-home-iteration1.jpg" alt="Norco website">
+		<a href="img/norco-home-iteration1.jpg" data-lightbox="Norco-3" data-title="Early iteration: Main landing page where customers can scroll down to watch video and read information to learn about the three types of city bikes."><img class="grid-item" src="img/norco-home-iteration1.jpg" alt="Norco website"></a>
 	</figure>
 		<p class="project-paragraph">Main landing page where customers can scroll down to watch video and read information to learn about the three types of city bikes.</p>
 
 	<!-- image -->
 	<figure class="grid project-content-image">
-		<img class="grid-item" src="img/norco-content-iteration1.jpg" alt="Norco website">
+		<a href="img/norco-content-iteration1.jpg" data-lightbox="Norco-6" data-title="Early wireframes how information of each bike part is presented as user scrolls down."><img class="grid-item" src="img/norco-content-iteration1.jpg" alt="Norco website"></a>
 	</figure>
 		<p class="project-paragraph">Early wireframes how information of each bike part is presented as user scrolls down.</p>
 </section>
@@ -167,19 +168,19 @@
 	<h3>Wireframe: Final iterations</h3>
 	<!-- image -->
 	<figure class="grid project-content-image">
-		<img class="grid-item" src="img/norco-wireframe-web.jpg" alt="Norco website">
+		<a href="img/norco-wireframe-web.jpg" data-lightbox="Norco-7" data-title="Final wireframes"><img class="grid-item" src="img/norco-wireframe-web.jpg" alt="Norco website"></a>
 	</figure>
 	<p class="project-paragraph">Desktop wireframe of a bike information page. We implemented parallax scrolling where the bike is fixed in the middle to create the experience of riding the bike in different environments. In each environment, customers can learn information about specific bike parts.</p>
 
 	<!-- image -->
 	<figure class="grid project-content-image">
-		<img class="grid-item" src="img/norco-wireframe-mobile.jpg" alt="Norco website">
+		<a href="img/norco-wireframe-mobile.jpg" data-lightbox="Norco-8" data-title="Final wireframes: mobile"><img class="grid-item" src="img/norco-wireframe-mobile.jpg" alt="Norco website"></a>
 	</figure>
 	<p class="project-paragraph">Mobile wireframe of the bike page. Cusomters can swipe left to view information on other bike parts</p>
 
 	<!-- image -->
 	<figure class="grid project-content-image">
-		<img class="grid-item" src="img/norco-wireframe-ipad.jpg" alt="Norco website">
+		<a href="img/norco-wireframe-ipad.jpg" data-lightbox="Norco-9" data-title="Final wireframes: mobile"><img class="grid-item" src="img/norco-wireframe-ipad.jpg" alt="Norco website"></a>
 	</figure>
 	<p class="project-paragraph">Tablet view of the in-store interface, so customers can easily read stories by other Norco riders and learn more about the bike.</p>
 </section>
@@ -202,7 +203,7 @@
 	<figcaption class="project-paragraph">Desktop view with story section reveled</figcaption>
 
 	<figure class="grid project-content-image">
-		<img class="grid-item" src="img/norco-mobile-view.png" alt="Norco website">
+		<a href="img/norco-mobile-view.png" data-lightbox="Norco-mockup-mobile" data-title="Final mockup: mobil view"><img class="grid-item" src="img/norco-mobile-view.png" alt="Norco website"></a>
 	</figure>
 	<figcaption class="project-paragraph">Mobile view of the webpage with story section visible</figcaption>
 	<br>
@@ -210,6 +211,8 @@
 	<!-- link to prototype: http://plbeg1.axshare.com/homepage.html -->
 </section>
 
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/lightbox.js"></script>
 </body>
 </html>

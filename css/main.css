@@ -449,6 +449,7 @@ footer {
 	font-size: 1em;
     position: absolute;
     bottom: 1.75em;
+    width: 15vw;
     left: 0;
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -477,6 +478,8 @@ footer {
     bottom: 1.8em;
     right: 0;
     opacity: 0;
+    text-align: right;
+    width: 15vw;
     transition: all 0.3s ease-in-out;
 }
 
@@ -651,7 +654,8 @@ figcaption {
 
 .project-content-image img{
 	margin-top: 2%;
-	width: 33.3%;
+	/*width: 33.3%;*/
+	width: 100%;
 }
 
 /*.project-content-image-v2 {

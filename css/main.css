@@ -713,15 +713,16 @@ iframe {
 
 #myImage{ 
 	/*margin-left: auto;*/
-	width: 100%;
+	width: 35vw;
 	height: 100%;
 	position: initial;
-	padding-left: 25em;
+	padding-left: 0;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    margin-left: 14em;
     display: block;
 }
 
@@ -741,8 +742,8 @@ iframe {
 
 .x-button {
 	position: absolute;
-	top: 4vh;
-	right: 9%;
+	top: 19vh;
+    right: 15vw;
 	z-index: 15;
 	cursor: pointer;
 }
@@ -766,16 +767,16 @@ iframe {
 .project-nav-logo {
 
 }
+
 .home-content img {
-	padding: 3em 2.5em 0;
-    /*width: 100%;*/
+    padding: 3em 2.5em 0;
+    /* width: 100%; */
     /* margin: auto; */
     position: absolute;
     top: 9vh;
     /* bottom: 0; */
     left: 0;
     right: 0;
-
 }
 
 .home-content h2 {
@@ -802,8 +803,9 @@ iframe {
 #myImage{
 	height: auto;
 	width: 100%;
-	/*margin-top: 17%;*/
-	padding: 1% 14%;
+	margin-top: 10%;
+	padding: 1% 5%;
+	margin-left: auto;
 }
 
 .about-content {
@@ -813,6 +815,10 @@ iframe {
    	font-size: 1em;
 }
 
+.x-button {
+	top: 4vh;
+    right: 6%;
+}
 /*Projects*/
 
 .project-thumbnail{

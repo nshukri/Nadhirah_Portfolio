@@ -3,15 +3,16 @@ $(document).ready(function(){
 	//scroll down to view projects 
 	$('#project-button').on('click', function(e) {
 		e.preventDefault();
-		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-		console.log("scroll")
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
+		console.log("scroll");
+		console.log(window.pageYOffset);
 	});
 
 	//scroll down to view projects 
 	$('#project-button2').on('click', function(e) {
 		e.preventDefault();
-		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-		console.log("scroll")
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
+		console.log("scroll");
 	});
 
 
@@ -31,16 +32,20 @@ $(document).ready(function(){
     slider();
 	});
 
+	console.log($(window).scrollTop());
+
 	function slider() {
-	var winHeight = $(window).height(); 
-
-	// $('.project-section-nav').hide()
-
-    if (document.body.scrollTop > winHeight-20) //Show nav after scrolling down 
-        $('.project-section-nav').stop().animate({"opacity": '1'});
-    else
-        $('.project-section-nav').stop().animate({"opacity": '0'}); //200 matches the width of the slider
+		var winHeight = $(window).height(); 
+		// console.log("slider call");
+		// $('.project-section-nav').hide()
+	    if ($(window).scrollTop() > winHeight-20) {//Show nav after scrolling down 
+	        $('.project-section-nav').stop().animate({"opacity": '1'});
+	    	
+	    }else{
+	        $('.project-section-nav').stop().animate({"opacity": '0'}); //200 matches the width of the slider
+	    }
 	}
+	
 
 	$('#about-section').hide();
 

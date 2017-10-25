@@ -17,10 +17,18 @@
   flex: 1 1 0%;
 }
 
+.grid-item-p {
+  flex: 1 1 25%;
+}
+
 
 @media (max-width: 65em){
   .grid-item {
    flex: 0 1 100%;
+  }
+
+  .grid-item-p {
+    flex: 1 1 100%;
   }
 
   .grid {

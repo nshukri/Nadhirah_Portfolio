@@ -158,6 +158,7 @@ a:hover {
 
 footer {
 	text-align: center;
+	margin-bottom: 5%;
 }
 
 .webTitle {
@@ -319,8 +320,8 @@ footer {
 	width: 100%; 
 	height: 100vh;
 	/*margin: 10% 0;*/
-	padding: 3.5% 10%;
-	top: 20vh;
+	padding: 8% 10%;
+	top: 1vh;
 	/*background-color: grey;*/
 }
 
@@ -328,24 +329,27 @@ footer {
 	position: relative;
 	text-align: center;
 	overflow: hidden;
-	height: 25em;
+	height: 20em;
 	width: 100%;
-	margin: 2em;
+	margin: 1em;
 		/*background-color: #5A0377;*/
 }
 
 .project-thumbnail{
 	/*width: 100%;*/
+	display: block;
+	text-align: center;
 	height: 100%;
     margin: auto;
     /*border: solid 0.001em #5A0377;*/
     /* opacity: 0.8; */
     position: absolute;
-    left: 0;
+    left: -70px;
     right: 0;
     top: 0;
     bottom: 0;
     /*bottom: 13vh;*/
+    overflow: hidden;
 }
 
 .purpleThumbnail-opacity {
@@ -367,28 +371,32 @@ footer {
 
 .home-project-title {
 	position: absolute;
-     font-size: 4.8vh; 
-    letter-spacing: 1vw;
+     font-size: 4.5vh; 
+    letter-spacing: 0.8vw;
     bottom: 0;
-    top: 40%;
+    top: 38%;
     right: 0;
     left: 0;
     margin: auto;
     /*height: 41%;*/
-    line-height: 2em;
+    line-height: 1.6em;
     padding-left: 0.3em;
     /* bottom: 50%; */
     text-align: center;
-    width: 100%;
+    width: 90%;
     text-transform: uppercase;
 }
 
 .project-three-title {
-	top: 17% !important;
+	top: 17.5% !important;
 }
 
 .project-two-title {
-	height: 27% !important;
+	top: 25% !important;
+}
+
+#companion-title {
+	padding-left: 0 !important;
 }
 
 
@@ -402,7 +410,7 @@ footer {
 	text-align: center;
 	width: 100%;
 	/*height: 0;*/
-	bottom: 13vh;
+	bottom: 10vh;
     /*top: 0;*/
     right: 0;
     left: 0;
@@ -411,7 +419,11 @@ footer {
 }
 
 .three-subtitle {
-	bottom: 3vh;
+	bottom: 2vh;
+}
+
+.two-subtitle {
+	bottom: 7vh;
 }
 
 .main-anchor {
@@ -554,6 +566,26 @@ footer {
 	background-position: center center;
 }
 
+#beast-image-cover  {
+	background: url(img/bb2-thumbnail.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#companion-image-cover  {
+	background: url(img/companion-thumbnail-color.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#beoform-image-cover  {
+	background: url(img/beoform-thumbnail-color.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
 
 .project-title {
 	font-size: 5vh;
@@ -579,9 +611,10 @@ footer {
 .project-paragraph {
 	/*width: 50%;*/
 	margin: auto;
-	
+	margin-top: 1em;
 	line-height: 1.5em;
 	font-size: 1.5em;
+
 }
 
 .video-container {
@@ -652,6 +685,11 @@ figcaption {
 	font-size: 1em;
 }
 
+.slides {
+	text-align: center;
+	/*line-height: 2em;*/
+}
+
 .project-content-image img{
 	margin-top: 2%;
 	/*width: 33.3%;*/
@@ -697,6 +735,10 @@ iframe {
 
 .framer-prototype {
 	/*visibility: visible;*/
+}
+
+.app-store-icon {
+	width: 30%;
 }
 
 
@@ -764,6 +806,11 @@ iframe {
 	bottom: 0.4em;
 }
 
+#up-arrow {
+	height: 1.9em;
+	right: 2.5%;
+}
+
 .project-nav-logo {
 
 }
@@ -797,8 +844,30 @@ iframe {
 }
 
 .home-project-subtitle {
-	/*bottom: 0.7em;*/
+	bottom: 4em;
 }
+
+.home-project-title {
+	 top: 35%;
+}
+
+.project-two-title {
+    top: 27% !important;
+}
+
+.project-three-title {
+    top: 30% !important;
+}
+
+.two-subtitle {
+    bottom: 10vh;
+}
+
+.three-subtitle {
+    bottom: 8vh;
+}
+
+
 /*About.html*/
 #myImage{
 	height: auto;
@@ -884,6 +953,24 @@ iframe {
 
 /*end of media query*/
 } 
+
+/*iphone 5 media query*/
+@media (max-width: 320px){
+
+.home-project-subtitle {
+	bottom: 3em;
+}
+
+.three-subtitle {
+    bottom: 8vh;
+}
+
+.two-subtitle {
+    bottom: 9.5vh;
+}
+
+/*end of iphone 5 media query*/
+}
 
 .reference-content li {
 	padding: 0.5em 0;

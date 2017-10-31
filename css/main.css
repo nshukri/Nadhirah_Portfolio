@@ -696,6 +696,10 @@ figcaption {
 	width: 100%;
 }
 
+.fullWidth-image {
+	margin-top: 0 !important;
+}
+
 /*.project-content-image-v2 {
 	margin: 4.5% 20% 2%;
 }

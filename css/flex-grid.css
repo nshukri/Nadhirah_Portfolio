@@ -21,6 +21,14 @@
   flex: 1 1 25%;
 }
 
+.grid-item-p2 {
+  flex: 1 1 100%;
+}
+
+.grid-item-p2 img {
+  background: black;
+}
+
 
 @media (max-width: 65em){
   .grid-item {

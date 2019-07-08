@@ -771,6 +771,7 @@ footer {
 
 .basic-info-col1 {
 	flex: 1 1 0%;
+	padding-right: 1.5em; 
 }
 
 .basic-info-col2 {
@@ -1079,6 +1080,7 @@ iframe {
 
 .basic-info-col1 {
 	flex: 1 1 100%;
+
 }
 
 .basic-info-col2 {

@@ -1069,6 +1069,10 @@ iframe {
 	font-size: 1em !important;
 }
 
+li {
+	font-size: 1em !important;
+}
+
 .basic-info {
 	flex-wrap: wrap;
 }

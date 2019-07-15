@@ -740,7 +740,6 @@ footer {
 	margin-top: 1em;
 	line-height: 1.5em;
 	font-size: 1.5em;
-
 }
 
 .video-container {
@@ -804,7 +803,11 @@ footer {
 }
 
 .project-content-image {
-	margin: 4.5% 0 2%;
+	margin: 2vh 0 2%;
+}
+
+.white-image {
+	border: 1px solid lightgrey;
 }
 
 figcaption {
